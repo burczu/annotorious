@@ -163,6 +163,11 @@ export class Annotorious {
     this._app.current.applyTemplate(bodies, openEditor);
   }
 
+  createFromSelection = b => {
+    const bodies = Array.isArray(b) ? b : [ b ];
+    this._app.current.createFromSelection(bodies);
+  }
+
   /**
    * Unmounts the annotator component
    */
