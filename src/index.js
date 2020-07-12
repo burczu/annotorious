@@ -163,9 +163,9 @@ export class Annotorious {
     this._app.current.applyTemplate(bodies, openEditor);
   }
 
-  createFromSelection = b => {
+  updateSelected = b => {
     const bodies = Array.isArray(b) ? b : [ b ];
-    this._app.current.createFromSelection(bodies);
+    this._app.current.updateSelected(bodies);
   }
 
   /**
