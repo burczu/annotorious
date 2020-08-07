@@ -3,6 +3,6 @@ export default {
   locale: null,
   readOnly: false,
   headless: false,
-  showComments: true,
-  showTags: true,
+  disableComments: false,
+  disableTags: false,
 }

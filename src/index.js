@@ -74,8 +74,8 @@ export class Annotorious {
         onMouseEnterAnnotation={this.handleMouseEnterAnnotation}
         onMouseLeaveAnnotation={this.handleMouseLeaveAnnotation}>
 
-        {config.showComments && <CommentWidget />}
-        {config.showTags && <TagWidget vocabulary={config.tagVocabulary} />}
+        {!config.disableComments && <CommentWidget />}
+        {!config.disableTags && <TagWidget vocabulary={config.tagVocabulary} />}
 
       </ImageAnnotator>,
 
